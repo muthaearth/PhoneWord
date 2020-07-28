@@ -8,14 +8,14 @@ using Xamarin.Forms;
 
 namespace Phoneword
 {
-    public class MainPage : ContentPage
+    public class OldMainPage : ContentPage
     {
         Entry phoneNumberText;
         Button translateButton;
         Button callButton;
         string translatedNumber;
 
-        public MainPage()
+        public OldMainPage()
         {
             this.Padding = new Thickness(20, 44, 20, 20);
 
@@ -26,23 +26,23 @@ namespace Phoneword
 
             panel.Children.Add(new Label
             {
-                Text = "Enter a Phoneword:",
+                Text = "Enter Your Phoneword:",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
             });
 
             panel.Children.Add(phoneNumberText = new Entry
             {
-                Text = "1-855-XAMARIN",
+                Text = "1-800-BEAGOFO",
             });
 
             panel.Children.Add(translateButton = new Button
             {
-                Text = "Translate"
+                Text = "Translate Phoneword"
             });
 
             panel.Children.Add(callButton = new Button
             {
-                Text = "Call",
+                Text = "Call Now",
                 IsEnabled = false,
             });
 
